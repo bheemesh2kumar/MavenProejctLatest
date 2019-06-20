@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="43990" started-at="2019-06-13T06:45:20Z" finished-at="2019-06-13T06:46:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="43990" started-at="2019-06-13T06:45:20Z" finished-at="2019-06-13T06:46:04Z">
+      <class name="Com.FirstAutomation.TestScripts.LoginTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.LoginTest@91161c7]" name="Setup" is-config="true" duration-ms="22068" started-at="2019-06-13T06:45:20Z" finished-at="2019-06-13T06:45:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="logintoapp()[pri:0, instance:Com.FirstAutomation.TestScripts.LoginTest@91161c7]" name="logintoapp" duration-ms="20553" started-at="2019-06-13T06:45:42Z" finished-at="2019-06-13T06:46:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoapp -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.LoginTest@91161c7]" name="TearDown" is-config="true" duration-ms="1250" started-at="2019-06-13T06:46:03Z" finished-at="2019-06-13T06:46:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Com.FirstAutomation.TestScripts.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
