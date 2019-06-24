@@ -12,7 +12,7 @@ public class BaseClass {
 	
 	public WebDriver driver;
 	
-	
+	//this  is before method
 	@BeforeMethod
 	public void Setup()
 	{
@@ -22,7 +22,7 @@ public class BaseClass {
 	
 	}
 	
-	
+	//this is after method
 	@AfterMethod
 	public void TearDown()
 	{
