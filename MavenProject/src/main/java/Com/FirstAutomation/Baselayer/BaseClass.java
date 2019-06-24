@@ -12,7 +12,7 @@ public class BaseClass {
 	
 	public WebDriver driver;
 	
-	//this  is before method
+	//this  is before method will be executed before eeach test 
 	@BeforeMethod
 	public void Setup()
 	{
@@ -22,7 +22,7 @@ public class BaseClass {
 	
 	}
 	
-	//this is after method
+	//this is after method will be executed after each test
 	@AfterMethod
 	public void TearDown()
 	{
