@@ -17,7 +17,7 @@ public class BrowserFactory {
 		if (browser.equalsIgnoreCase("Chorome")) {
 
 			System.setProperty("webdriver.chrome.driver",
-					"C:/Users/home/workspace/MavenProject/Drivers/chromedriver.exe");
+					"C:/Users/home/git/MavenProejctLatest/MavenProject/Drivers/chromedriver.exe");
 
 			driver = new ChromeDriver();
 
