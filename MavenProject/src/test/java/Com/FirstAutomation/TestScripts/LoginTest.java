@@ -15,38 +15,24 @@ import Com.FirstAutomation.Pages.ZooplaHomepage;
 import Com.FirstAutomation.Pages.ZooplaLoginpage;
 import Com.FirstAutomation.Utilities.BrowserFactory;
 
-
 public class LoginTest extends BaseClass {
-	
-	
-	ZooplaLoginpage ZooplaLoginpageref;
+
 	ZooplaHomepage ZooplaHomepageref;
-	
-	
-	
+
 	@Test
-	public void logintoapp() 
-	{
-		
-		ZooplaLoginpageref=new ZooplaLoginpage(driver);
-				
-		ZooplaLoginpageref.Signinmainbutton.click();
-		
-		ZooplaLoginpageref.logintoApplication("manu.bheemesh@gmail.com", "@Thoughts1");
-		String titl=driver.getTitle();
+	public void logintoapp() {
+
+		ZooplaHomepageref = new ZooplaHomepage(driver);
+		logger.info("Created object for home page");
+		logger.info("getting page title");
+
+		String titl = driver.getTitle();
 		System.out.println(titl);
 		Assert.assertEquals("Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents", titl);
-		
-		//ZooplaHomepageref=new ZooplaHomepage();
-		//ZooplaHomepageref.GetAlllinks(ZooplaHomepageref.alllinks);
-		
-		
-		}
-	
-	
-	
-	
-	
-	
+		logger.info("test is pass resutls are matched");
+		String userprofilename = ZooplaHomepageref.UserProfilename.getText();
+		System.out.println(userprofilename);
+
+	}
 
 }

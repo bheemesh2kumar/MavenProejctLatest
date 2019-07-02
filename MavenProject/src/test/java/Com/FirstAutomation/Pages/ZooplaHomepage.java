@@ -18,14 +18,18 @@ public class ZooplaHomepage extends HomebasedMethods
 
 {
 	private static final String HttpURLConnection = null;
-//	WebDriver driver;
+      public WebDriver driver;
 
-	public ZooplaHomepage() {
+	public ZooplaHomepage(WebDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
 
 	@FindBy(xpath = "//a")
 	public List<WebElement> alllinks;
+	
+	@FindBy(xpath="//div[@class='subnav subnav--account']/p")
+	public WebElement UserProfilename ;
 
 	
 

@@ -14,7 +14,7 @@ import org.openqa.selenium.WebElement;
 import Com.FirstAutomation.Baselayer.BaseClass;
 import Com.FirstAutomation.Utilities.BrowserFactory;
 
-public class HomebasedMethods extends BrowserFactory {
+public class HomebasedMethods extends BaseClass  {
 
 	// get all links of page
 	public void GetAlllinks(List<WebElement> elements) throws MalformedURLException, IOException {
