@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 
 import Com.FirstAutomation.Pages.ZooplaLoginpage;
 import Com.FirstAutomation.Utilities.BrowserFactory;
+import Com.FirstAutomation.Utilities.ReadConfigUtility;
 
 public class BaseClass {
 
@@ -17,14 +18,16 @@ public class BaseClass {
 	public WebDriver driver;
 
 	public static Logger logger;
+	ReadConfigUtility ReadConfigUtilityref;
 
 	// this is before method will be executed before eeach test
 	@BeforeMethod
 	public void Setup() {
-		driver = BrowserFactory.StartApplication(driver, "https://www.zoopla.co.uk/?signedin=1", "Chorome");
+		ReadConfigUtilityref=new ReadConfigUtility();
+		driver = BrowserFactory.StartApplication(driver,ReadConfigUtilityref.getApplicationurl() ,ReadConfigUtilityref.getBrowser());
 		ZooplaLoginpageref = new ZooplaLoginpage(driver);
 		ZooplaLoginpageref.Signinmainbutton.click();
-		ZooplaLoginpageref.logintoApplication("manu.bheemesh@gmail.com", "@Thoughts1");
+		ZooplaLoginpageref.logintoApplication(ReadConfigUtilityref.getUserName(),ReadConfigUtilityref.getPassward());
 		logger = Logger.getLogger("New Maven Project");
 		PropertyConfigurator.configure("Log4j.properties");
 

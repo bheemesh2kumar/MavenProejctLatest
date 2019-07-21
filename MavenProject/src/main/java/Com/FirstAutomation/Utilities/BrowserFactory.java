@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class BrowserFactory {
+public class BrowserFactory  {
 	
 	public WebDriver driver;
 	
@@ -40,8 +40,8 @@ public class BrowserFactory {
 		
 		driver.manage().window().maximize();
 		driver.get(url);
-		driver.manage().timeouts().pageLoadTimeout(10000,TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(ReadConfigUtility.globalwaitMin,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(ReadConfigUtility.globalwaitMin, TimeUnit.SECONDS);
 		return driver;
 
 	}

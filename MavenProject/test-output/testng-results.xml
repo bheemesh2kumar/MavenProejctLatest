@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27661" started-at="2019-07-02T18:51:18Z" finished-at="2019-07-02T18:51:46Z">
+  <suite name="Default suite" duration-ms="27746" started-at="2019-07-20T11:45:57Z" finished-at="2019-07-20T11:46:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="27661" started-at="2019-07-02T18:51:18Z" finished-at="2019-07-02T18:51:46Z">
+    <test name="Default test" duration-ms="27746" started-at="2019-07-20T11:45:57Z" finished-at="2019-07-20T11:46:25Z">
       <class name="Com.FirstAutomation.TestScripts.LoginTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.LoginTest@91161c7]" name="Setup" is-config="true" duration-ms="26704" started-at="2019-07-02T18:51:18Z" finished-at="2019-07-02T18:51:45Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.LoginTest@91161c7]" name="Setup" is-config="true" duration-ms="26383" started-at="2019-07-20T11:45:57Z" finished-at="2019-07-20T11:46:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="logintoapp()[pri:0, instance:Com.FirstAutomation.TestScripts.LoginTest@91161c7]" name="logintoapp" duration-ms="121" started-at="2019-07-02T18:51:45Z" finished-at="2019-07-02T18:51:45Z">
+        <test-method status="PASS" signature="logintoapp()[pri:0, instance:Com.FirstAutomation.TestScripts.LoginTest@91161c7]" name="logintoapp" duration-ms="177" started-at="2019-07-20T11:46:23Z" finished-at="2019-07-20T11:46:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintoapp -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.LoginTest@91161c7]" name="TearDown" is-config="true" duration-ms="794" started-at="2019-07-02T18:51:45Z" finished-at="2019-07-02T18:51:46Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.LoginTest@91161c7]" name="TearDown" is-config="true" duration-ms="1134" started-at="2019-07-20T11:46:23Z" finished-at="2019-07-20T11:46:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- Com.FirstAutomation.TestScripts.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
