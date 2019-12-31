@@ -5,7 +5,7 @@
     <classes>
       <class name="Com.FirstAutomation.TestScripts.DBtestcases">
         <methods>
-          <include name="employeetablevalidation"/>
+          <include name="employeerecordstojsonfile"/>
         </methods>
       </class> <!-- Com.FirstAutomation.TestScripts.DBtestcases -->
     </classes>

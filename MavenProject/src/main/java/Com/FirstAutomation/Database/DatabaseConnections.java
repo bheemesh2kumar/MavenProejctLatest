@@ -11,12 +11,14 @@ import Com.FirstAutomation.Utilities.ReadConfigUtility;
 public class DatabaseConnections
 
 {
+	Connection con = null;
+	ResultSet rs;
 
 	ReadConfigUtility ReadConfigUtilityref = new ReadConfigUtility();
 
 	public Connection getconnection() throws ClassNotFoundException, SQLException {
 
-		Connection con = getconnection(ReadConfigUtilityref.getDriver(), ReadConfigUtilityref.geturl(),
+		con = getconnection(ReadConfigUtilityref.getDriver(), ReadConfigUtilityref.geturl(),
 				ReadConfigUtilityref.getdbusername(), ReadConfigUtilityref.getdbpwd());
 		return con;
 	}
@@ -26,7 +28,7 @@ public class DatabaseConnections
 		Class.forName(Drivername);
 
 		System.out.println("*************" + "My Driver is loaded");
-		Connection con = DriverManager.getConnection(conurl, username, pwd);
+		con = DriverManager.getConnection(conurl, username, pwd);
 
 		return con;
 
@@ -34,7 +36,7 @@ public class DatabaseConnections
 
 	public void gettablerecords(String query) throws ClassNotFoundException, SQLException {
 
-		Connection con = getconnection();
+		// Connection con = getconnection();
 		Statement stmt = con.createStatement();
 
 		ResultSet rs = stmt.executeQuery(query);
@@ -55,6 +57,17 @@ public class DatabaseConnections
 		}
 
 		System.out.println("All table records are printed successfully");
+
+	}
+
+	public ResultSet gettablerecordsasresultset(String query) throws ClassNotFoundException, SQLException {
+
+		con = getconnection();
+		System.out.println("**************" + "MySQL establisehd successfully");
+		Statement stmt = con.createStatement();
+		rs = stmt.executeQuery(query);
+
+		return rs;
 
 	}
 
