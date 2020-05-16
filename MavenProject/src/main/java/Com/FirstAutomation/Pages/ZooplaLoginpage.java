@@ -10,12 +10,11 @@ public class ZooplaLoginpage extends HomebasedMethods {
 	public WebDriver driver;
 
 	public ZooplaLoginpage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 
-	
-	//this is sign web element
+	// this is sign web element
 	@FindBy(xpath = "//a[@class='button button--tertiary-dark account-link__text']")
 	public WebElement Signinmainbutton;
 
@@ -27,21 +26,17 @@ public class ZooplaLoginpage extends HomebasedMethods {
 
 	@FindBy(xpath = "//button[@name='action:signin']")
 	public WebElement Loginbutton;
-	
-	
-	
-	
-	
-	//page login
-	
-	
-	public void logintoApplication(String username,String password)
-	{
+
+	@FindBy(xpath = "//div[@class='ui-cookie-consent-choose__buttons']//button[contains(text(),'Accept all cookies')]")
+	public WebElement Acceptallcookiesbutton;
+
+	// page login
+
+	public void logintoApplication(String username, String password) {
 		EmailText.sendKeys(username);
 		PasswordText.sendKeys(password);
 		Loginbutton.click();
-		
+
 	}
-	
 
 }

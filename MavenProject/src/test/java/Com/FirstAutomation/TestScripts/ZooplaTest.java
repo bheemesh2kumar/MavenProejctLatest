@@ -15,14 +15,14 @@ import Com.FirstAutomation.Pages.ZooplaHomepage;
 import Com.FirstAutomation.Pages.ZooplaLoginpage;
 import Com.FirstAutomation.Utilities.BrowserFactory;
 
-public class LoginTest extends BaseClass {
+public class ZooplaTest extends BaseClass {
 
-	ZooplaHomepage ZooplaHomepageref;
+	//ZooplaHomepage ZooplaHomepageref;
 
-	@Test
+	@Test(priority=1)
 	public void logintoapp() {
 
-		ZooplaHomepageref = new ZooplaHomepage(driver);
+		
 		logger.info("Created object for home page");
 		logger.info("getting page title");
 
@@ -30,8 +30,16 @@ public class LoginTest extends BaseClass {
 		System.out.println(titl);
 		Assert.assertEquals("Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents", titl);
 		logger.info("test is pass resutls are matched");
-		String userprofilename = ZooplaHomepageref.UserProfilename.getText();
-		System.out.println(userprofilename);
+
+	}
+
+	@Test(priority=2)
+	public void validatesearchoptions() {
+		
+
+		//ZooplaHomepageref.forsaleoption.click();
+		ZooplaHomepageref.torentoption.click();
+		ZooplaHomepageref.housepricesoption.click();
 
 	}
 

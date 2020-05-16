@@ -18,19 +18,26 @@ public class ZooplaHomepage extends HomebasedMethods
 
 {
 	private static final String HttpURLConnection = null;
-      public WebDriver driver;
+	public WebDriver driver;
 
 	public ZooplaHomepage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(xpath = "//a")
 	public List<WebElement> alllinks;
-	
-	@FindBy(xpath="//div[@class='subnav subnav--account']/p")
-	public WebElement UserProfilename ;
 
-	
+	@FindBy(xpath = "//div[@class='subnav subnav--account']/p")
+	public WebElement UserProfilename;
+
+	@FindBy(xpath = "//a[@id='search-tabs-for-sale']")
+	public WebElement forsaleoption;
+
+	@FindBy(xpath = "//a[@id='search-tabs-to-rent']")
+	public WebElement torentoption;
+
+	@FindBy(xpath = "//a[@id='search-tabs-house-prices']")
+	public WebElement housepricesoption;
 
 }
