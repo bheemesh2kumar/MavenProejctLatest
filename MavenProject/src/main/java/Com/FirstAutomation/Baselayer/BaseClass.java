@@ -51,7 +51,7 @@ public class BaseClass {
 	// this is after method will be executed after each test
 	@AfterMethod
 	public void TearDown() {
-		BrowserFactory.QuitBrowser(driver);
+		driver.quit();
 	}
 
 }

@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="46049" started-at="2020-05-19T23:10:15 IST" finished-at="2020-05-19T23:11:01 IST">
+  <suite name="Default suite" duration-ms="24845" started-at="2020-06-26T15:34:56 IST" finished-at="2020-06-26T15:35:21 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="46049" started-at="2020-05-19T23:10:15 IST" finished-at="2020-05-19T23:11:01 IST">
-      <class name="Com.FirstAutomation.TestScripts.ZooplaTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="Setup" is-config="true" duration-ms="15487" started-at="2020-05-19T23:10:15 IST" finished-at="2020-05-19T23:10:31 IST">
+    <test name="Default test" duration-ms="24845" started-at="2020-06-26T15:34:56 IST" finished-at="2020-06-26T15:35:21 IST">
+      <class name="Com.FirstAutomation.TestScripts.ExcelSampleTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ExcelSampleTest@5a8806ef]" name="Setup" is-config="true" duration-ms="8588" started-at="2020-06-26T15:34:56 IST" finished-at="2020-06-26T15:35:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="logintoapp()[pri:1, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="logintoapp" duration-ms="310" started-at="2020-05-19T23:10:31 IST" finished-at="2020-05-19T23:10:31 IST">
+        <test-method status="PASS" signature="downloadexcelvalidation()[pri:1, instance:Com.FirstAutomation.TestScripts.ExcelSampleTest@5a8806ef]" name="downloadexcelvalidation" duration-ms="13543" started-at="2020-06-26T15:35:05 IST" finished-at="2020-06-26T15:35:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintoapp -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="TearDown" is-config="true" duration-ms="12125" started-at="2020-05-19T23:10:31 IST" finished-at="2020-05-19T23:10:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="Setup" is-config="true" duration-ms="15607" started-at="2020-05-19T23:10:43 IST" finished-at="2020-05-19T23:10:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="validatesearchoptions()[pri:2, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="validatesearchoptions" duration-ms="1431" started-at="2020-05-19T23:10:59 IST" finished-at="2020-05-19T23:11:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatesearchoptions -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="TearDown" is-config="true" duration-ms="1000" started-at="2020-05-19T23:11:00 IST" finished-at="2020-05-19T23:11:01 IST">
+        </test-method> <!-- downloadexcelvalidation -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ExcelSampleTest@5a8806ef]" name="TearDown" is-config="true" duration-ms="2637" started-at="2020-06-26T15:35:18 IST" finished-at="2020-06-26T15:35:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- Com.FirstAutomation.TestScripts.ZooplaTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- Com.FirstAutomation.TestScripts.ExcelSampleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
