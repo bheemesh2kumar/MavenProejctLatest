@@ -25,13 +25,15 @@ public class BaseClass {
 
 	// this is before method will be executed before eeach test
 	@BeforeMethod
-	public void Setup() {
+	public void Setup() throws InterruptedException {
 
 		ReadConfigUtilityref = new ReadConfigUtility();
 		driver = BrowserFactory.StartApplication(driver, ReadConfigUtilityref.getApplicationurl(),
 				ReadConfigUtilityref.getBrowser());
 		ZooplaLoginpageref = new ZooplaLoginpage(driver);
 		ZooplaHomepageref = new ZooplaHomepage(driver);
+		
+		Thread.sleep(5000);
 
 		ZooplaLoginpageref.Acceptallcookiesbutton.click();
 

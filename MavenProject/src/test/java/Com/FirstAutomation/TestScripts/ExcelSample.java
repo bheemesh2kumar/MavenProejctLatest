@@ -19,7 +19,7 @@ import Com.FirstAutomation.Pages.ExcelSamplepageOR;
 import Com.FirstAutomation.Utilities.CommonUtilities;
 import net.lingala.zip4j.ZipFile;
 
-public class ExcelSampleTest extends BaseClassExcelValidation
+public class ExcelSample extends BaseClassExcelValidation
 
 {
 

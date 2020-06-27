@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="65159" started-at="2020-06-27T11:07:35 IST" finished-at="2020-06-27T11:08:41 IST">
+  <suite name="Suite" duration-ms="64488" started-at="2020-06-27T20:26:39 IST" finished-at="2020-06-27T20:27:44 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="65159" started-at="2020-06-27T11:07:35 IST" finished-at="2020-06-27T11:08:41 IST">
+    <test name="Test" duration-ms="64488" started-at="2020-06-27T20:26:39 IST" finished-at="2020-06-27T20:27:44 IST">
       <class name="Com.FirstAutomation.TestScripts.ZooplaTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="Setup" is-config="true" duration-ms="29073" started-at="2020-06-27T11:07:35 IST" finished-at="2020-06-27T11:08:05 IST">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="Setup" is-config="true" duration-ms="31469" started-at="2020-06-27T20:26:39 IST" finished-at="2020-06-27T20:27:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="logintoapp()[pri:1, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="logintoapp" duration-ms="106" started-at="2020-06-27T11:08:05 IST" finished-at="2020-06-27T11:08:05 IST">
+        <test-method status="PASS" signature="logintoapp()[pri:1, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="logintoapp" duration-ms="395" started-at="2020-06-27T20:27:11 IST" finished-at="2020-06-27T20:27:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintoapp -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="TearDown" is-config="true" duration-ms="6895" started-at="2020-06-27T11:08:05 IST" finished-at="2020-06-27T11:08:12 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="TearDown" is-config="true" duration-ms="1807" started-at="2020-06-27T20:27:11 IST" finished-at="2020-06-27T20:27:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="Setup" is-config="true" duration-ms="19501" started-at="2020-06-27T11:08:12 IST" finished-at="2020-06-27T11:08:31 IST">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="Setup" is-config="true" duration-ms="27783" started-at="2020-06-27T20:27:13 IST" finished-at="2020-06-27T20:27:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="validatesearchoptions()[pri:2, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="validatesearchoptions" duration-ms="1053" started-at="2020-06-27T11:08:31 IST" finished-at="2020-06-27T11:08:32 IST">
+        <test-method status="PASS" signature="validatesearchoptions()[pri:2, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="validatesearchoptions" duration-ms="1750" started-at="2020-06-27T20:27:41 IST" finished-at="2020-06-27T20:27:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatesearchoptions -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="TearDown" is-config="true" duration-ms="8434" started-at="2020-06-27T11:08:32 IST" finished-at="2020-06-27T11:08:41 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5a8806ef]" name="TearDown" is-config="true" duration-ms="1187" started-at="2020-06-27T20:27:42 IST" finished-at="2020-06-27T20:27:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
