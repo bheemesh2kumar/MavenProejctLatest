@@ -37,7 +37,7 @@ public class ExcelSampleTest extends BaseClassExcelValidation
 		CommonUtilitiesref.scrollintoView(driver, ExcelSamplepageORref.sampleexceldownloadbutton);
 		ExcelSamplepageORref.sampleexceldownloadbutton.click();
 
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 
 		String downlaodexcelpath = System.getProperty("user.dir") + "\\Exceldownloads\\";
 
@@ -108,7 +108,7 @@ public class ExcelSampleTest extends BaseClassExcelValidation
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, enabled = false)
 	public void donwlaodexcelrecords() {
 
 		ExcelSamplepageORref = new ExcelSamplepageOR(driver);
@@ -124,7 +124,7 @@ public class ExcelSampleTest extends BaseClassExcelValidation
 		}
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, enabled = false)
 	public void validatetwoarrylistmaps() {
 
 		ExcelSamplepageORref = new ExcelSamplepageOR(driver);

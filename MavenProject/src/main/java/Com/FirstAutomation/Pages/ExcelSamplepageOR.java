@@ -28,6 +28,11 @@ public class ExcelSamplepageOR extends HomebasedMethods
 	@FindBy(xpath = "//div[@class='col-lg-8']//div[@class='well']//following-sibling::h2[1]//following-sibling::p/a[contains(text(),'Excel sample data workbook')]")
 	public WebElement sampleexceldownloadbutton;
 
+	/*
+	 * @FindBy(xpath = "/html/body/div/div/div[1]/p[4]/a") public WebElement
+	 * sampleexceldownloadbutton;
+	 */
+
 	@FindBy(xpath = "//div[@class='col-lg-8']/child::table")
 	public WebElement sampleexceltable;
 

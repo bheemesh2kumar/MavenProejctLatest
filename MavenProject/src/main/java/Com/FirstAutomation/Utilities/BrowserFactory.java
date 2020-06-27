@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -21,16 +23,13 @@ public class BrowserFactory {
 					System.getProperty("user.dir") + "//Drivers/chromedriver.exe");
 
 			String downloadpathzip = System.getProperty("user.dir") + "\\Zipfolder";
-			
-			File file=new File(downloadpathzip);
-			if(file.list().length>0)
-			{
-				for(File fileval:file.listFiles())
-				{
+
+			File file = new File(downloadpathzip);
+			if (file.list().length > 0) {
+				for (File fileval : file.listFiles()) {
 					fileval.delete();
 				}
 			}
-			
 
 			HashMap<String, Object> map = new HashMap<String, Object>();
 			map.put("profile.default_content_settings.popups", 0);
@@ -46,15 +45,45 @@ public class BrowserFactory {
 			 */
 
 			driver = new ChromeDriver(ChromeOptionsref);
-			//driver = new ChromeDriver();
+			// driver = new ChromeDriver();
 
 		}
 
 		else if (browser.equalsIgnoreCase("FireFox")) {
 
-			System.setProperty("webdriver.firefox.driver",
-					"C:/Users/home/workspace/MavenProject/Drivers/geckodriver.exe");
-			driver = new FirefoxDriver();
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//Drivers/geckodriver.exe");
+
+			String downloadpathzip = System.getProperty("user.dir") + "\\Zipfolder";
+
+			File file = new File(downloadpathzip);
+			if (file.list().length > 0) {
+				for (File fileval : file.listFiles()) {
+					fileval.delete();
+				}
+			}
+
+			FirefoxOptions options = new FirefoxOptions();
+
+			/*
+			 * options.addPreference("browser.download.folderList", 2);
+			 * options.addPreference("browser.download.dir", "downloadpathzip");
+			 * options.addPreference("browser.download.useDownloadDir", true);
+			 * options.addPreference("browser.helperApps.alwaysAsk.force", false);
+			 * options.addPreference("browser.helperApps.neverAsk.saveToDisk",
+			 * "application/zip");
+			 * options.addPreference("browser.download.manager.ShowWhenStarting", false);
+			 * options.addPreference("pdfjs.disabled", true);
+			 */
+
+			FirefoxProfile profile = new FirefoxProfile();
+			profile.setPreference("browser.download.folderList", 2);
+			profile.setPreference("browser.download.dir", "downloadpathzip");
+			profile.setPreference("browser.download.useDownloadDir", true);
+			profile.setPreference("browser.helperApps.neverAsk.saveToDisk", "application/zip");
+
+			options.setProfile(profile);
+
+			driver = new FirefoxDriver(options);
 
 		}
 

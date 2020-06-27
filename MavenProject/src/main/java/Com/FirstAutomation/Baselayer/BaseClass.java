@@ -33,6 +33,12 @@ public class BaseClass {
 		ZooplaLoginpageref = new ZooplaLoginpage(driver);
 		ZooplaHomepageref = new ZooplaHomepage(driver);
 
+		ZooplaLoginpageref.Acceptallcookiesbutton.click();
+
+		ZooplaLoginpageref.Signinmainbutton.click();
+
+	
+/*
 		try {
 			ZooplaLoginpageref.Signinmainbutton.click();
 		} catch (WebDriverException ex) {
@@ -40,7 +46,7 @@ public class BaseClass {
 
 			ZooplaLoginpageref.Signinmainbutton.click();
 
-		}
+		}*/
 
 		ZooplaLoginpageref.logintoApplication(ReadConfigUtilityref.getUserName(), ReadConfigUtilityref.getPassward());
 		logger = Logger.getLogger("New Maven Project");
