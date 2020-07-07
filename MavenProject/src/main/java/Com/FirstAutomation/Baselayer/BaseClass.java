@@ -24,7 +24,7 @@ public class BaseClass {
 	ReadConfigUtility ReadConfigUtilityref;
 
 	// this is before method will be executed before eeach test
-	@BeforeMethod
+	@BeforeMethod()
 	public void Setup() throws InterruptedException {
 
 		ReadConfigUtilityref = new ReadConfigUtility();
@@ -32,23 +32,21 @@ public class BaseClass {
 				ReadConfigUtilityref.getBrowser());
 		ZooplaLoginpageref = new ZooplaLoginpage(driver);
 		ZooplaHomepageref = new ZooplaHomepage(driver);
-		
-		Thread.sleep(5000);
+
+		// Thread.sleep(5000);
 
 		ZooplaLoginpageref.Acceptallcookiesbutton.click();
 
 		ZooplaLoginpageref.Signinmainbutton.click();
 
-	
-/*
-		try {
-			ZooplaLoginpageref.Signinmainbutton.click();
-		} catch (WebDriverException ex) {
-			ZooplaLoginpageref.Acceptallcookiesbutton.click();
-
-			ZooplaLoginpageref.Signinmainbutton.click();
-
-		}*/
+		/*
+		 * try { ZooplaLoginpageref.Signinmainbutton.click(); } catch
+		 * (WebDriverException ex) { ZooplaLoginpageref.Acceptallcookiesbutton.click();
+		 * 
+		 * ZooplaLoginpageref.Signinmainbutton.click();
+		 * 
+		 * }
+		 */
 
 		ZooplaLoginpageref.logintoApplication(ReadConfigUtilityref.getUserName(), ReadConfigUtilityref.getPassward());
 		logger = Logger.getLogger("New Maven Project");
