@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="51775" started-at="2020-07-07T23:09:26 IST" finished-at="2020-07-07T23:10:18 IST">
+  <suite name="Suite" duration-ms="77393" started-at="2020-07-09T00:45:33 IST" finished-at="2020-07-09T00:46:50 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="51775" started-at="2020-07-07T23:09:26 IST" finished-at="2020-07-07T23:10:18 IST">
+    <test name="Test" duration-ms="77393" started-at="2020-07-09T00:45:33 IST" finished-at="2020-07-09T00:46:50 IST">
       <class name="Com.FirstAutomation.TestScripts.ZooplaTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="Setup" is-config="true" duration-ms="18879" started-at="2020-07-07T23:09:28 IST" finished-at="2020-07-07T23:09:47 IST">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="Setup" is-config="true" duration-ms="23955" started-at="2020-07-09T00:45:34 IST" finished-at="2020-07-09T00:45:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="getlogindata(java.util.Map)[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="getlogindata" duration-ms="13" started-at="2020-07-07T23:09:47 IST" data-provider="logintestdata" finished-at="2020-07-07T23:09:47 IST">
+        <test-method status="PASS" signature="getlogindata(java.util.Map)[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="getlogindata" duration-ms="10" started-at="2020-07-09T00:45:58 IST" data-provider="logintestdata" finished-at="2020-07-09T00:45:58 IST">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getlogindata -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="TearDown" is-config="true" duration-ms="3555" started-at="2020-07-07T23:09:47 IST" finished-at="2020-07-07T23:09:51 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="TearDown" is-config="true" duration-ms="6130" started-at="2020-07-09T00:45:58 IST" finished-at="2020-07-09T00:46:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="Setup" is-config="true" duration-ms="12803" started-at="2020-07-07T23:09:51 IST" finished-at="2020-07-07T23:10:03 IST">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="Setup" is-config="true" duration-ms="17698" started-at="2020-07-09T00:46:04 IST" finished-at="2020-07-09T00:46:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="getlogindata(java.util.Map)[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="getlogindata" duration-ms="2" started-at="2020-07-07T23:10:03 IST" data-provider="logintestdata" finished-at="2020-07-07T23:10:03 IST">
+        <test-method status="PASS" signature="getlogindata(java.util.Map)[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="getlogindata" duration-ms="2" started-at="2020-07-09T00:46:22 IST" data-provider="logintestdata" finished-at="2020-07-09T00:46:22 IST">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getlogindata -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="TearDown" is-config="true" duration-ms="1007" started-at="2020-07-07T23:10:03 IST" finished-at="2020-07-07T23:10:04 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="TearDown" is-config="true" duration-ms="5994" started-at="2020-07-09T00:46:22 IST" finished-at="2020-07-09T00:46:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="Setup" is-config="true" duration-ms="11966" started-at="2020-07-07T23:10:04 IST" finished-at="2020-07-07T23:10:16 IST">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="Setup" is-config="true" duration-ms="18198" started-at="2020-07-09T00:46:28 IST" finished-at="2020-07-09T00:46:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="getlogindata(java.util.Map)[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="getlogindata" duration-ms="2" started-at="2020-07-07T23:10:16 IST" data-provider="logintestdata" finished-at="2020-07-07T23:10:16 IST">
+        <test-method status="PASS" signature="getlogindata(java.util.Map)[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="getlogindata" duration-ms="2" started-at="2020-07-09T00:46:46 IST" data-provider="logintestdata" finished-at="2020-07-09T00:46:46 IST">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getlogindata -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="TearDown" is-config="true" duration-ms="1145" started-at="2020-07-07T23:10:16 IST" finished-at="2020-07-07T23:10:18 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Com.FirstAutomation.TestScripts.ZooplaTest@5e853265]" name="TearDown" is-config="true" duration-ms="4116" started-at="2020-07-09T00:46:46 IST" finished-at="2020-07-09T00:46:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
