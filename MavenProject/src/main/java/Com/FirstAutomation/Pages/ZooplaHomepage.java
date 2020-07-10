@@ -40,4 +40,10 @@ public class ZooplaHomepage extends HomebasedMethods
 	@FindBy(xpath = "//a[@id='search-tabs-house-prices']")
 	public WebElement housepricesoption;
 
+	@FindBy(css = "li#mn-agents")
+	public WebElement findagentslabelname;
+
+	@FindBy(xpath = "//div[@class='subnav subnav--double subnav--agents']/ul[1]//li[2]/a")
+	public WebElement ukestateagentslink;
+
 }

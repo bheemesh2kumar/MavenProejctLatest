@@ -18,7 +18,7 @@ public class ReadConfigUtility {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"C:/Users/home/Documents/MavenTDDPRoject/MavenProejctLatest/MavenProject/Configurations/Applications.properties");
+					System.getProperty("user.dir") + "\\Configurations\\Applications.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
